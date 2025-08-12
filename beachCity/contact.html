@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beach City</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Mayor Dewey</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="info">
+        <h1>Contact Mayor Dewey</h1>
+        <p>
+          Got a question, concern, or just want to say “hello”? Mayor Dewey
+          (that's Mayor Nanefua Dewey these days!) is here to help! Whether
+          you're curious about town events, safety guidelines, or Beach City's
+          rich (and occasionally bizarre) history, our mayor's office is always
+          open. Drop by City Hall, leave a note in the suggestion box, or tune
+          in to Dewey's weekly radio update. At Beach City, we believe in
+          community—and our mayor is just a wave away!
+        </p>
+      </div>
+      <div ="mayor-image">
+        <img id="mayor" src="images/mayorDewey.jpg" alt="Mayor Dewey Image" />
+      </div>
+      <p class="quote">“Beach City: Keeping It Weird Since Forever.”</p>
+    </main>
+    <section class="contact-form">
+      <h2>Contact Form</h2>
+      <form action="/submit-contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <p>
+        &copy; 2025 Beach City Tourism Board | Site created by Alexander Green
+        for Educational Purposes
+      </p>
+      <p>Last Updated: July 2025</p>
+    </footer>
+  </body>
+</html>

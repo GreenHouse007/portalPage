@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <img class="logo" src="images/ABC.jpeg" alt="News Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Weather</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="news.html">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="weather-section">
+      <div class="page">
+        <h1>LATEST WEATHER</h1>
+        <div class="archive">
+          <article class="article">
+            <section id="stats">
+              <div class="summary">
+                <h2>Weather summary</h2>
+                <h3 id="five-city"></h3>
+                <p>Currently: <span id="current-desc"></span></p>
+                <p>
+                  Tempature:
+                  <span id="current-temp"></span> °F
+                </p>
+                <p>Feels Like: <span id="current-feelsLike"></span> °F</p>
+                <p>Humidity: <span id="current-humid"></span>%</p>
+                <p>Wind Speed: <span id="current-windSpeed"></span> mph</p>
+              </div>
+            </section>
+            <div id="mainIcon"></div>
+          </article>
+
+          <!-- 5 day forecast -->
+          <div class="article-five-day">
+            <article id="forecastContainer">
+              <h2 id="forecastTitle">5 Day Forecast</h2>
+              <h3 id="city"></h3>
+              <div class="flex">
+                <div class="flex-col">
+                  <span id="dayTitle1" class="col-head"></span>
+                  <div id="image1"></div>
+                  <span class="temp-data">
+                    <span id="data1"></span>
+                    <span>°F</span>
+                  </span>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle2" class="col-head"></span>
+                  <div id="image2"></div>
+                  <div class="temp-data">
+                    <span id="data2"></span>
+                    <span>°F</span>
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle3" class="col-head"></span>
+                  <div id="image3"></div>
+                  <div class="temp-data">
+                    <span id="data3"></span>
+                    <span>°F</span>
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle4" class="col-head"></span>
+                  <div id="image4"></div>
+                  <div class="temp-data">
+                    <span id="data4"></span>
+                    <span>°F</span>
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <span id="dayTitle5" class="col-head"></span>
+                  <div id="image5"></div>
+                  <div class="temp-data">
+                    <span id="data5"></span>
+                    <span>°F</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <footer>
+      <p>
+        No copyright | Alexander Green |
+        <a href="https://tooeletech.edu/" target="_blank">
+          Tooele Technical College</a
+        >
+      </p>
+      <p>Last updated: July 2025</p>
+    </footer>
+    <script src="weather.js"></script>
+  </body>
+</html>
